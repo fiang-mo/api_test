@@ -1,0 +1,76 @@
+- - username: test_register
+    password: '123456'
+    email: ''
+  - code: 0
+    msg: register success!
+    data: {}
+- - username: ''
+    password: '123456'
+    email: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      username:
+        - 该字段不能为空。
+- - username: te
+    password: '123456'
+    email: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      username:
+        - 请确保这个字段至少包含 3 个字符。
+- - username: test_123_4567891112222222222222333333333
+    password: '123456'
+    email: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      username:
+        - 请确保这个字段不能超过 30 个字符。
+- - username: test_register
+    password: ''
+    email: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      password:
+        - 该字段不能为空。
+- - username: test_register
+    password: '12345'
+    email: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      password:
+        - 请确保这个字段至少包含 6 个字符。
+- - username: test_register
+    password: 1234567890123564tests12233456
+    email: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      password:
+        - 请确保这个字段不能超过 16 个字符。
+- - username: test_register
+    password: '123456'
+    email: '122'
+  - code: 3003
+    msg: 参数不合法
+    data:
+      email:
+        - 请输入合法的邮件地址。
+- - username: test_register
+    password: '123456'
+    email: abcddd.com
+  - code: 3003
+    msg: 参数不合法
+    data:
+      email:
+        - 请输入合法的邮件地址。
+- - username: test_register
+    password: '123456'
+    email: test123@qq.com
+  - code: 0
+    msg: register success!
+    data: {}

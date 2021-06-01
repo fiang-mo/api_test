@@ -1,0 +1,12 @@
+- - goodscode: ""
+    goodsname: 《selenium入门到精通》
+  - code: 2000
+    msg: 缺少必填项goodscode
+- - goodscode: sp_100022
+    goodsname: 《selenium入门到精通》
+  - code: 4000
+    msg: goodscode不能重复添加
+- - goodscode: sp_100226
+    goodsname: 《selenium入门到精通》
+  - code: 0
+    msg: success!

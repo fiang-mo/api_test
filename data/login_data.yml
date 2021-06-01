@@ -1,0 +1,16 @@
+- - username: test
+    password: '123456'
+  - code: 0
+    msg: login success!
+- - username: ''
+    password: '123456'
+  - code: 3003
+    msg: 账号或密码不正确
+- - username: test
+    password: ''
+  - code: 3003
+    msg: 账号或密码不正确
+- - username: ''
+    password: ''
+  - code: 3003
+    msg: 账号或密码不正确

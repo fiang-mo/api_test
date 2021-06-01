@@ -1,0 +1,70 @@
+- - goodscode: sp_10086_test
+  - code: 0
+    msg: success!
+- - goodscode: ''
+  - code: 2000
+    msg: 缺少必填项goodscode
+    data: {}
+- - goodscode: '113'
+  - code: 3003
+    msg: 参数不合法
+    data:
+      goodscode:
+        - 请确保这个字段至少包含 8 个字符。
+- - goodscode: sp_15_11112222_test_122
+  - code: 3003
+    msg: 参数不合法
+    data:
+      goodscode:
+        - 请确保这个字段不能超过 15 个字符。
+- - goodscode: sp_10086_test
+    goodsname: ''
+  - code: 3003
+    msg: 参数不合法
+    data:
+      goodsname:
+        - 该字段不能为空。
+- - goodscode: sp_10086_test
+    goodsname: 《python自动化》
+  - code: 0
+    msg: success!
+- - goodscode: sp_10086_test
+    goodsname: 《python自动化》aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  - code: 3003
+    msg: 参数不合法
+    data:
+      goodsname:
+        - 请确保这个字段不能超过 30 个字符。
+- - goodscode: sp_10086_test
+    stock: aa
+  - code: 3003
+    msg: 参数不合法
+    data:
+      stock:
+        - 请填写合法的整数值。
+- - goodscode: sp_10086_test
+    stock: -1
+  - code: 3003
+    msg: 参数不合法
+    data:
+      stock:
+        - 请填写合法的整数值。
+- - goodscode: sp_10086_test
+    stock: 1000
+  - code: 0
+    msg: success!
+- - goodscode: sp_10086_test
+    goodsstatus: 0
+  - code: 0
+    msg: success!
+- - goodscode: sp_10086_test
+    goodsstatus: 1
+  - code: 0
+    msg: success!
+- - goodscode: sp_10086_test
+    goodsstatus: 2
+  - code: 3003
+    msg: 参数不合法
+    data:
+      goodsstatus:
+        - “2” 不是合法选项。
